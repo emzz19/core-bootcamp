@@ -11,15 +11,14 @@ describe("SolidityDataTypes", function () {
     const [account1] = await hre.ethers.getSigners();
 
     const SolidityDataTypes = await hre.ethers.getContractFactory(
-      "SolidityDataTypes"
-    );
+      "SolidityDataTypes");
     const ctcSolidityDataTypes = await SolidityDataTypes.deploy();
 
     return { ctcSolidityDataTypes, account1 };
   }
 
   describe("Deployment", function () {
-    it("should call constructor", async function () {
+    it("CONSTRUCTOR EXECUTED", async function () {
       const { ctcSolidityDataTypes } = await loadFixture(deploy);
 
       expect(ctcSolidityDataTypes).not.to.be.undefined;

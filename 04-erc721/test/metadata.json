@@ -1,0 +1,12 @@
+{
+    "name": "emzz",
+    "description": "MY aft Description",
+    "symbol": "HSY",
+    "image": "https://i.imgur.com/1Gw3UdP.jpeg",
+    "attributes": [
+        {
+            "trait_type": "TYPE",
+            "value": "VALUE"
+        }
+    ]
+}

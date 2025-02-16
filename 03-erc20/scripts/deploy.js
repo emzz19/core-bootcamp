@@ -7,7 +7,7 @@
 const hre = require("hardhat");
 
 async function main() {
-  const contract = await hre.ethers.deployContract("NameYourToken", [1234000000000000000000n]);
+  const contract = await hre.ethers.deployContract("ems", [1234000000000000000000n]);
 
   await contract.waitForDeployment();
 
@@ -20,3 +20,4 @@ main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
+
